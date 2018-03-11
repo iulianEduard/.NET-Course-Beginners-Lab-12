@@ -4,12 +4,16 @@ namespace MyApp.Core.Models
 {
     public class TaskManage
     {
-        public int ID { get; set; }
+        public int Id { get; set; }
 
-        public int TaskID { get; set; }
+        public int TaskId { get; set; }
 
-        public int FrequencyID { get; set; }
+        public string TaskName { get; set; }
 
-        public DateTime CreatedOn { get; set; }
+        public int FrequencyId { get; set; }
+
+        public string FrequencyName { get; set; }
+
+        public string Description { get; set; }
     }
 }

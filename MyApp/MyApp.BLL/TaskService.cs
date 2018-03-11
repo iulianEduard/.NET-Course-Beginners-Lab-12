@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
 using MyApp.BLL.Ports;
+using MyApp.Core.Helpers;
 using MyApp.Core.Models;
 using MyApp.Repository.Entity;
 using MyApp.Repository.Ports;
-using System;
 using System.Collections.Generic;
 
 namespace MyApp.BLL
@@ -46,27 +46,58 @@ namespace MyApp.BLL
             var taskList = new List<Task>();
             var taskEnumerable = _taskRepository.GetAll();
 
+            taskList = Mapper.Map<List<Task>>(taskEnumerable);
+
             return taskList;
         }
 
         public Task GetTaskById(int id)
         {
             var task = new Task();
-
             var taskEntity = _taskRepository.GetById(id);
+
+            task = Mapper.Map<Task>(taskEntity);
 
             return task;
         }
 
         public void Save(Task task)
         {
-            if(task.ID == 0)
-            {
+            var entity = Mapper.Map<TaskEntity>(task);
 
+            if(entity.ID == 0)
+            {
+                _taskRepository.Insert(entity);
             }
             else
             {
+                _taskRepository.Update(entity);
+            }
+        }
 
+        public List<TaskUnassigned> GetUnassignedTask()
+        {
+            var unassignedTasksCollection = _taskRepository.GetUnassignedTasks();
+
+            return unassignedTasksCollection;
+        }
+
+        public List<TaskUnassigned> GetAssignedTasks()
+        {
+            var activeTasks = _taskRepository.GetAssignedTasks((int)TaskStatusEnum.Active);
+
+            return activeTasks;
+        }
+
+        public void ResetStatus(int id, int statusId)
+        {
+            var taskEntity = _taskRepository.GetById(id);
+
+            if (taskEntity != null)
+            {
+                taskEntity.StatusID = statusId;
+
+                _taskRepository.Update(taskEntity);
             }
         }
 

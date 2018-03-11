@@ -40,8 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helpers\Helper.cs" />
+    <Compile Include="Models\FrequencyDto.cs" />
+    <Compile Include="Models\Status.cs" />
     <Compile Include="Models\Task.cs" />
     <Compile Include="Models\TaskManage.cs" />
+    <Compile Include="Models\TaskUnassigned.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

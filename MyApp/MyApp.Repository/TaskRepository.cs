@@ -1,7 +1,10 @@
-﻿using MyApp.Repository.Entity;
+﻿using Dapper;
+using MyApp.Core.Models;
+using MyApp.Repository.Entity;
 using MyApp.Repository.Ports;
 using MyApp.Repository.Repo;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace MyApp.Repository
 {
@@ -49,6 +52,24 @@ namespace MyApp.Repository
         public void Update(TaskEntity taskEntity)
         {
             _taskRepository.Update(taskEntity);
+        }
+
+        public List<TaskUnassigned> GetUnassignedTasks()
+        {
+            var spResult = _taskRepository.SingleSetStoredProcedure<TaskUnassigned>("dbo.usp_GetUnassignedTasks");
+
+            return spResult.ToList();
+        }
+
+        public List<TaskUnassigned> GetAssignedTasks(int statusId)
+        {
+            var spParams = new DynamicParameters(new {
+                @StatusId = statusId
+            });
+
+            var spResult = _taskRepository.SingleSetStoredProcedure<TaskUnassigned>("dbo.usp_GetTaskByStatus", spParams);
+
+            return spResult.ToList();
         }
 
         #endregion Public Methods

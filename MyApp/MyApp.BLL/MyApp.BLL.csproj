@@ -44,7 +44,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrequencyService.cs" />
+    <Compile Include="Ports\IFrequencyRepository.cs" />
+    <Compile Include="Ports\IStatusService.cs" />
+    <Compile Include="Ports\ITaskManageService.cs" />
     <Compile Include="Ports\ITaskService.cs" />
+    <Compile Include="StatusService.cs" />
+    <Compile Include="TaskManageService.cs" />
     <Compile Include="TaskService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

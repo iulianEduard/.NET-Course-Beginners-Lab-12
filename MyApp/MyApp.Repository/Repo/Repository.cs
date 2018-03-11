@@ -2,6 +2,7 @@
 using Dapper.Contrib.Extensions;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using static Dapper.SqlMapper;
@@ -22,7 +23,7 @@ namespace MyApp.Repository.Repo
 
         public Repository()
         {
-            connectionString = "";
+            connectionString = ConfigurationManager.ConnectionStrings["SynkronConnectionString"].ConnectionString;
         }
 
         #endregion Constructor

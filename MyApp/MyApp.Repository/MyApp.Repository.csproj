@@ -37,6 +37,7 @@
       <HintPath>..\packages\Dapper.Contrib.1.50.4\lib\net451\Dapper.Contrib.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
@@ -47,17 +48,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entity\FrequencyEntity.cs" />
+    <Compile Include="Entity\StatusEntity.cs" />
     <Compile Include="Entity\TaskEntity.cs" />
     <Compile Include="Entity\TaskManageEntity.cs" />
+    <Compile Include="FrequencyRepository.cs" />
+    <Compile Include="Ports\IFrequencyRepository.cs" />
+    <Compile Include="Ports\IStatusRepository.cs" />
     <Compile Include="Ports\ITaskManageRepository.cs" />
     <Compile Include="Ports\ITaskRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repo\IRepository.cs" />
     <Compile Include="Repo\Repository.cs" />
+    <Compile Include="StatusRepository.cs" />
     <Compile Include="TaskManageRepository.cs" />
     <Compile Include="TaskRepository.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\MyApp.Core\MyApp.Core.csproj">
+      <Project>{BC21F5EB-8C67-4878-87BA-3702BF6359EC}</Project>
+      <Name>MyApp.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>

@@ -1,9 +1,6 @@
-﻿using MyApp.Repository.Entity;
-using System;
+﻿using MyApp.Core.Models;
+using MyApp.Repository.Entity;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MyApp.Repository.Ports
 {
@@ -18,5 +15,9 @@ namespace MyApp.Repository.Ports
         void Update(TaskEntity taskEntity);
 
         bool Delete(TaskEntity taskEntity);
+
+        List<TaskUnassigned> GetUnassignedTasks();
+
+        List<TaskUnassigned> GetAssignedTasks(int statusId);
     }
 }

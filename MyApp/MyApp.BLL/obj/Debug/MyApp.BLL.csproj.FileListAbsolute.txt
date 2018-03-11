@@ -1,0 +1,2 @@
+D:\Work\Cursuri\.NET Beginners\.NET-Course-Beginners-Lab-12\MyApp\MyApp.BLL\obj\Debug\MyApp.BLL.csprojResolveAssemblyReference.cache
+D:\Work\Cursuri\.NET Beginners\.NET-Course-Beginners-Lab-12\MyApp\MyApp.BLL\obj\Debug\MyApp.BLL.csproj.CoreCompileInputs.cache

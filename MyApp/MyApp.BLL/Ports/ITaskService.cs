@@ -1,8 +1,5 @@
 ﻿using MyApp.Core.Models;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace MyApp.BLL.Ports
 {
@@ -15,5 +12,11 @@ namespace MyApp.BLL.Ports
         void Save(Task task);
 
         void Delete(int taskId);
+
+        List<TaskUnassigned> GetUnassignedTask();
+
+        List<TaskUnassigned> GetAssignedTasks();
+
+        void ResetStatus(int id, int statusId);
     }
 }
