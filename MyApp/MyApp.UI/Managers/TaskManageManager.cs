@@ -54,11 +54,11 @@ namespace MyApp.UI.Managers
 
             // Add unassigned tasks
             var unassignedTasks = _taskService.GetUnassignedTask();
-            unassignedTasks.ForEach(ut => model.TaskManageList.Add(ConvertToUI(ut)));
+            //unassignedTasks.ForEach(ut => model.TaskManageList.Add(ConvertToUI(ut)));
 
             // Add assigned tasks
             var assignedTasks = _taskManageService.GetTaskManageList();
-            assignedTasks.ForEach(at => model.TaskManageList.Add(ConvertToUI(at)));
+            //assignedTasks.ForEach(at => model.TaskManageList.Add(ConvertToUI(at)));
         }
 
         #endregion Public Methods
