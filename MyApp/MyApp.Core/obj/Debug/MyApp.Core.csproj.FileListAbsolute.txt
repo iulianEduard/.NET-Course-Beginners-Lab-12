@@ -4,3 +4,9 @@ D:\Work\Cursuri\.NET Beginners\.NET-Course-Beginners-Lab-12\MyApp\MyApp.Core\obj
 D:\Work\Cursuri\.NET Beginners\.NET-Course-Beginners-Lab-12\MyApp\MyApp.Core\obj\Debug\MyApp.Core.csproj.CoreCompileInputs.cache
 D:\Work\Cursuri\.NET Beginners\.NET-Course-Beginners-Lab-12\MyApp\MyApp.Core\obj\Debug\MyApp.Core.dll
 D:\Work\Cursuri\.NET Beginners\.NET-Course-Beginners-Lab-12\MyApp\MyApp.Core\obj\Debug\MyApp.Core.pdb
+D:\Work Personal\.NET Course\.NET-Course-Beginners-Lab-12\MyApp\MyApp.Core\bin\Debug\MyApp.Core.dll
+D:\Work Personal\.NET Course\.NET-Course-Beginners-Lab-12\MyApp\MyApp.Core\bin\Debug\MyApp.Core.pdb
+D:\Work Personal\.NET Course\.NET-Course-Beginners-Lab-12\MyApp\MyApp.Core\obj\Debug\MyApp.Core.csprojResolveAssemblyReference.cache
+D:\Work Personal\.NET Course\.NET-Course-Beginners-Lab-12\MyApp\MyApp.Core\obj\Debug\MyApp.Core.csproj.CoreCompileInputs.cache
+D:\Work Personal\.NET Course\.NET-Course-Beginners-Lab-12\MyApp\MyApp.Core\obj\Debug\MyApp.Core.dll
+D:\Work Personal\.NET Course\.NET-Course-Beginners-Lab-12\MyApp\MyApp.Core\obj\Debug\MyApp.Core.pdb

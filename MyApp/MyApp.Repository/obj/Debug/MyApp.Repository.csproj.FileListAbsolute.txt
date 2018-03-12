@@ -8,3 +8,15 @@ D:\Work\Cursuri\.NET Beginners\.NET-Course-Beginners-Lab-12\MyApp\MyApp.Reposito
 D:\Work\Cursuri\.NET Beginners\.NET-Course-Beginners-Lab-12\MyApp\MyApp.Repository\obj\Debug\MyApp.Repository.csproj.CoreCompileInputs.cache
 D:\Work\Cursuri\.NET Beginners\.NET-Course-Beginners-Lab-12\MyApp\MyApp.Repository\obj\Debug\MyApp.Repository.dll
 D:\Work\Cursuri\.NET Beginners\.NET-Course-Beginners-Lab-12\MyApp\MyApp.Repository\obj\Debug\MyApp.Repository.pdb
+D:\Work Personal\.NET Course\.NET-Course-Beginners-Lab-12\MyApp\MyApp.Repository\bin\Debug\MyApp.Repository.dll
+D:\Work Personal\.NET Course\.NET-Course-Beginners-Lab-12\MyApp\MyApp.Repository\bin\Debug\MyApp.Repository.pdb
+D:\Work Personal\.NET Course\.NET-Course-Beginners-Lab-12\MyApp\MyApp.Repository\bin\Debug\Dapper.Contrib.dll
+D:\Work Personal\.NET Course\.NET-Course-Beginners-Lab-12\MyApp\MyApp.Repository\bin\Debug\Dapper.dll
+D:\Work Personal\.NET Course\.NET-Course-Beginners-Lab-12\MyApp\MyApp.Repository\bin\Debug\MyApp.Core.dll
+D:\Work Personal\.NET Course\.NET-Course-Beginners-Lab-12\MyApp\MyApp.Repository\bin\Debug\MyApp.Core.pdb
+D:\Work Personal\.NET Course\.NET-Course-Beginners-Lab-12\MyApp\MyApp.Repository\bin\Debug\Dapper.xml
+D:\Work Personal\.NET Course\.NET-Course-Beginners-Lab-12\MyApp\MyApp.Repository\bin\Debug\Dapper.Contrib.xml
+D:\Work Personal\.NET Course\.NET-Course-Beginners-Lab-12\MyApp\MyApp.Repository\obj\Debug\MyApp.Repository.csprojResolveAssemblyReference.cache
+D:\Work Personal\.NET Course\.NET-Course-Beginners-Lab-12\MyApp\MyApp.Repository\obj\Debug\MyApp.Repository.csproj.CoreCompileInputs.cache
+D:\Work Personal\.NET Course\.NET-Course-Beginners-Lab-12\MyApp\MyApp.Repository\obj\Debug\MyApp.Repository.dll
+D:\Work Personal\.NET Course\.NET-Course-Beginners-Lab-12\MyApp\MyApp.Repository\obj\Debug\MyApp.Repository.pdb

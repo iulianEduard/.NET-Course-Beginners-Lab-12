@@ -1,5 +1,10 @@
+using MyApp.BLL;
+using MyApp.BLL.Ports;
+using MyApp.Repository;
+using MyApp.Repository.Ports;
+using MyApp.Repository.Repo;
+using MyApp.UI.Managers;
 using System;
-
 using Unity;
 
 namespace MyApp.UI
@@ -10,6 +15,7 @@ namespace MyApp.UI
     public static class UnityConfig
     {
         #region Unity Container
+
         private static Lazy<IUnityContainer> container =
           new Lazy<IUnityContainer>(() =>
           {
@@ -22,6 +28,7 @@ namespace MyApp.UI
         /// Configured Unity Container.
         /// </summary>
         public static IUnityContainer Container => container.Value;
+
         #endregion
 
         /// <summary>
@@ -40,8 +47,23 @@ namespace MyApp.UI
             // Make sure to add a Unity.Configuration to the using statements.
             // container.LoadConfiguration();
 
-            // TODO: Register your type's mappings here.
-            // container.RegisterType<IProductRepository, ProductRepository>();
+            // Register database
+            container.RegisterType(typeof(IRepository<>), typeof(Repository.Repo.Repository<>));
+
+            // Register repositories
+            container.RegisterType<ITaskRepository, TaskRepository>();
+            container.RegisterType<ITaskManageRepository, TaskManageRepository>();
+            container.RegisterType<IFrequencyRepository, FrequencyRepository>();
+            container.RegisterType<IStatusRepository, StatusRepository>();
+
+            // Register services
+            container.RegisterType<ITaskService, TaskService>();
+            container.RegisterType<ITaskManageService, TaskManageService>();
+            container.RegisterType<IFrequencyService, FrequencyService>();
+            container.RegisterType<IStatusService, StatusService>();
+
+            // Register managers
+            container.RegisterType<TaskManager>("TaskManager");
         }
     }
 }
